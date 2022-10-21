@@ -1,0 +1,92 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(44, 44, 44);
+}
+
+.figure {
+    width: 15rem;
+    height: 15rem;
+    display: grid;
+    grid-template-columns: repeat(5, 20%);
+    grid-template-rows: repeat(5, 20%);
+    animation: rotate 15s linear infinite;
+}
+
+.figure__elem {
+    width: 90%;
+    height: 90%;
+    border-radius: 5%;
+    box-shadow: 0 0 20px 5px, 0 0 150px 0;
+    z-index: 0;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes color {
+    0%{
+        background: #dd00f3;
+        color: #dd00f3;
+    }
+
+    12.5% {
+        background: #2b1de8;
+        color: #2b1de8;
+    }
+    
+    25% {
+        background: #1ddde8;
+        color: #1ddde8;
+    }
+    
+    37.5% {
+        background: #1de840;
+        color: #1de840;
+    }
+    
+    50% {
+        background: #e3e81d;
+        color: #e3e81d;
+    }
+
+    62.5% {
+        background: #e8b71d;
+        color: #e8b71d;
+    }
+
+    75% {
+        background: #e81d1d;
+        color: #e81d1d;
+    }
+
+    87.5% {
+        background: #ff2400;
+        color: #ff2400;
+    }
+
+    100%{
+        background: #dd00f3;
+        color: #dd00f3;
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(0%);
+    }
+
+    100%{
+        transform: scale(100%);
+    }
+}
