@@ -7,6 +7,18 @@ body {
     background: rgb(44, 44, 44);
 }
 
+.options {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    background: #ffffffdf;
+    padding: 1rem;
+    border-radius: .5rem;
+}
+
 .figure {
     width: 15rem;
     height: 15rem;
